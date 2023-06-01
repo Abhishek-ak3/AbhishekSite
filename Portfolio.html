@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHISHEK -Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: rgb(1, 1, 41);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 8px;
+        }
+
+        nav {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* border: 2px solid red; */
+            background-color: #32329e;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            font-size: 1.3rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+        .leftSection {
+            font-size: 1.6rem;
+            width: 70%;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .RighttSection {
+            /* background-color: green; */
+            width: 30%;
+        }
+
+        .RighttSection img {
+            height: 100%;
+            width: 80%;
+        }
+
+        #name {
+            color: aqua;
+        }
+
+        nav ul li:hover {
+            cursor: pointer;
+            /* font-size: 1.01rem; */
+            color: rgb(117, 117, 145);
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* #element {
+            
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid black;
+            animation: typing 3s steps(20) infinite;
+        } */
+        #element {
+            border-right: 1px solid black;
+            color: rgb(98, 237, 98);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20) infinite, erasing 3s steps(20) infinite;
+        }
+
+        .box {
+            width: 67%;
+            font-size: 2.7rem;
+        }
+
+        .box div {
+            margin: 1px 0;
+        }
+
+        main hr {
+            border: 0;
+            background-color: orange;
+            height: 5px;
+            margin: 50px;
+        }
+
+        .first {
+            padding: 5%;
+        }
+
+        .secondsection {
+            margin: 50px;
+            height: 80vh;
+        }
+
+        .secondsection h3 {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .item1 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+        .item2 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+        .item8 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+
+
+        .item3 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+        .item4 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+        .item5 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+        .item5 img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .item6 {
+            display: flex;
+            margin: 25px 0;
+        }
+
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(21 20 20);
+            width: 70vw;
+            padding: 3px 10px;
+        }
+
+        .lofty {
+            width: 30vw;
+            border-radius: 20px;
+            height: 210px;
+        }
+
+        .btn {
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: red;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .thirdSection {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+
+
+        .resume {
+            padding: 15px;
+            margin: 15px 0;
+            color: white;
+            background-color: rgb(20, 20, 123);
+            border-radius: 15px;
+            font-size: 1rem;
+            border: 4px solid white;
+        }
+
+        .frames {
+            width: 40%;
+            height: 300px;
+
+
+        }
+
+        .resume:hover {
+
+            background-color: rgb(17, 17, 198);
+
+            cursor: pointer;
+
+        }
+
+        .resume a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width:450px) {
+            .item1 {
+                flex-direction: column;
+            }
+
+            .item1 img {
+                width: 100%;
+            }
+
+            .item2 {
+                flex-direction: column;
+            }
+
+            .item2 img {
+                width: 100%;
+            }
+
+            .item3 {
+                flex-direction: column;
+            }
+
+            .item3 img {
+                width: 100%;
+            }
+
+            .item4 {
+                flex-direction: column;
+            }
+
+            .item4 img {
+                width: 100%;
+            }
+
+            .item5 {
+                flex-direction: column;
+            }
+
+            .item5 img {
+                width: 100%;
+            }
+
+            .item6 {
+                flex-direction: column;
+            }
+
+            .item6 img {
+                width: 100%;
+            }
+
+            .item8 {
+                flex-direction: column;
+            }
+
+            .item8 img {
+                width: 100%;
+            }
+
+            .box {
+                font-size: 1rem;
+            }
+
+            nav {
+                /* font-size: 1rem; */
+                display: flex;
+                height: 70px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .right {
+                font-size: 1rem;
+            }
+
+            .RighttSection {
+                /* background-color: green; */
+                width: 100%;
+            }
+
+            .resume {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+
+
+            footer {
+                background-color: black;
+                color: white;
+                width: 100%;
+                font-size: 1rem;
+                text-align: center;
+                padding: 15px;
+
+            }
+
+            .thirdSection {
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                flex-direction: column;
+                width: 38ppx;
+            }
+
+            .frames {
+                width: 300px;
+                border-radius: 10px;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nvg">
+            <div class="left">ABHISHEK's PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li>I COUNT ON MEMORIES, NOT ON QUANTITY!</li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                <div class="box">
+                    HI, I AM &nbsp; <span id="name">ABHISHEK</span> and &nbsp;
+                    <br>
+                    <div>I'm a <span id="element"></span></div>
+                    <button class="resume"><a href="RESUMAE.pdf">DOWNLOAD RESUME</a></button>
+                </div>
+            </div>
+            <div class="RighttSection">
+                <img src="https://portfolio.abhishek333boy.repl.co/image/port.png" alt="Abhishek pic">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h3>Here, are SOME of My Projects:-</h3>
+            <div class="flexbox">
+                <div class="item1">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.eEJBDSYAut31khqSGVlu2AHaD5?w=334&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>SNAKE GAME</h3>
+                        <p>This is a snake game. Here, in this game a chotu(small) snake will be there you have to grow
+                            it by eating the food. And be aware that as soon as it touch the square boundary or himself
+                            it is going to be dead.!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/snakegame/" target="_blank">Play
+                                Game</a></button>
+                    </div>
+                </div>
+                <div class="item2">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.NXL90wJyReI-K2tYo4WFFQHaEK?w=328&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>TIC-TAC-TOE GAME</h3>
+                        <p>This is tic-tac-toe game.As, we have played this game in our Childhood so,it is whole same as
+                            it is!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/tictactoe/" target="_blank">Play
+                                Game</a> </button>
+                    </div>
+                </div>
+                <div class="item3">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.uHarHapXv7HPVfFsoVk4wQHaFj?w=208&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>I CARD GENERATOR</h3>
+                        <p>This is Icard generator.Generate ID Card for school and college students but at the end it is
+                            just a demo!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/tictactoe/" target="_blank">Generate
+                                Card</a></button>
+                    </div>
+                </div>
+                <div class="item6">
+                    <img class="lofty"
+                        src="data:image/png;base64,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"
+                        alt="">
+                    <div class="desc">
+                        <h3>SPOTIFY CLONE</h3>
+                        <p>This is SPOTIFY. Listen only some limited songs which I have picked up randomly!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/player.github.io/"
+                                target="_blank">Play SPOTIFY</a></button>
+                    </div>
+                </div>
+                <div class="item4">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.tIxwAvrueMHR9KwPYAYMzQHaHW?w=169&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>NOTE APP</h3>
+                        <p>This is note app.Make notes , delete note and that's right it is capable of now!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/noteapp/" target="_blank">Make
+                                Note</a></button>
+                    </div>
+                </div>
+                <div class="item5">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.t3Q4OuiqL93Tb79Fgu-HwQHaNx?w=183&h=340&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>QUIZ APP</h3>
+                        <p>This is quiz app.And here, it is consist of very simple questions of Computer Science!!!</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/quiz-app/" target="_blank">Answer
+                                the Quiz</a></button>
+                    </div>
+                </div>
+                <div class="item8">
+                    <img class="lofty"
+                        src="https://th.bing.com/th/id/OIP.475sj6R0A1guhH7edkpWhQHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="">
+                    <div class="desc">
+                        <h3>QR CODE GENERATOR</h3>
+                        <p>This is QR Code Generator. Here,just paste link or write text then scan the generated QR Code
+                            it will redirect you on same path!!!(I made this using <i>API</i>)</p>
+                        <button class="btn"><a href="https://abhishek-ak3.github.io/QRGenerator/" target="_blank">Answer
+                                the Quiz</a></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h3>MY YOUTUBE CHANNEL VIDEOS:-</h3>
+            <section class="thirdSection">
+                <iframe class="frames" src="https://www.youtube.com/embed/3sZ7D4pSxdI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe class="frames" src="https://www.youtube.com/embed/JNhjh_Ba8kU" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe class="frames" src="https://www.youtube.com/embed/7RaFDsDVVQ8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe class="frames" src="https://www.youtube.com/embed/e0XyQeM-JTs" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <footer>This website is for Abhishek interest Only!</footer>
+            </section>
+
+        </section>
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+
+
+        var typed = new Typed('#element', {
+            strings: ['<i>Frontend Web Developer</i>', 'Teacher', 'Youtuber', 'Spiritual Person', 'Video-Editor', 'Content-Creator'],
+
+            typeSpeed: 80,
+        });
+        let audio = new Audio('ignite.mp3');
+        window.onload = () => {
+            audio.play();
+        }
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
